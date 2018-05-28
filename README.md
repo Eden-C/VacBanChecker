@@ -18,7 +18,6 @@ THIS WILL ONLY WORK FOR THE CSGO PLAYER REPORTS PAGE AND IM SORRY IF IT DOESNT W
 
 
 
-
 Credits:
 
 [iEyepawd](http://www.reddit.com/user/iEyepawd) for bookmarklet
