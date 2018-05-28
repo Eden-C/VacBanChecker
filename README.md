@@ -11,7 +11,7 @@ THIS WILL ONLY WORK FOR THE CSGO PLAYER REPORTS PAGE AND IM SORRY IF IT DOESNT W
 [Original Instructions](https://github.com/WillsonHaw/VacBanChecker)
 
 1. Open view the raw code for [vaccheck.min.js](https://raw.githubusercontent.com/EdenCat/VacBanChecker/master/vaccheck.min.js).
-2. Right click your new bookmark and edit it. In the **URL** or **Location** field, paste the contents of [vaccheck.min.js](https://raw.githubusercontent.com/EdenCat/VacBanChecker/master/vaccheck.min.js).
+2. Create new bookmark and then edit it. In the **URL** or **Location** field, paste the contents of [vaccheck.min.js](https://raw.githubusercontent.com/EdenCat/VacBanChecker/master/vaccheck.min.js).
 3. Navigate to the player reports page (Should be https://steamcommunity.com/id/YOUR_USERNAME/gcpd/730?tab=playerreports)
 4. Then click the bookmarklet and it will use the Steam API to get a list of VAC bans for those users on that page.
 
