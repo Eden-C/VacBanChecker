@@ -41,11 +41,13 @@ javascript:(function(){
 
     function getId(friend) {
         var steam64identifier = "76561197960265728";
+        //Gets the element with the player's name and miniProfile ID
+        var friend = friend.querySelectorAll("div.playerNickname")[0].firstChild;
         var miniProfileId = friend.attributes.getNamedItem('data-miniprofile').value;
         return add(steam64identifier, miniProfileId);
     }
-
-    var friends = [].slice.call(document.querySelectorAll('#memberList .member_block, #memberManageList .member_block, .friendHolder, .friendBlock'));
+    //Selects the table's second column for player
+    var friends = [].slice.call(document.querySelectorAll('#personaldata_elements_container td.commends_inner_name'));
     var lookup = {};
 
     friends.forEach(function(friend) {
@@ -88,8 +90,8 @@ javascript:(function(){
                 span.style.color = 'rgb(43, 203, 64)';
                 span.innerHTML = 'No Bans for this player.';
             }
-
-            friend.querySelector('.friendSmallText').appendChild(span);
+            //Adds child directly to table, needs to be fixed
+            friend.appendChild(span);
         });
     }
 
