@@ -21,7 +21,7 @@ THIS WILL ONLY WORK FOR THE CSGO PLAYER REPORTS PAGE AND IM SORRY IF IT DOESNT W
 
 Credits:
 
-[iEyepawd](http://www.reddit.com/user/iEyepawd) for bookmarklet
+Bookmarklet by [iEyepawd](https://www.reddit.com/r/GlobalOffensive/comments/348292/i_made_a_userscript_to_easily_show_vac_bans_on/)
 
 Forked from [WillsonHaw/VacBanChecker](https://github.com/WillsonHaw/VacBanChecker)
 
