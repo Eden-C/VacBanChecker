@@ -47,7 +47,7 @@ javascript:(function(){
         return add(steam64identifier, miniProfileId);
     }
     //Selects the table's second column for player
-    var friends = [].slice.call(document.querySelectorAll('#personaldata_elements_container td.commends_inner_name'));
+    var friends = [].slice.call(document.querySelectorAll('#personaldata_elements_container td.commends_inner_name');
     var lookup = {};
 
     friends.forEach(function(friend) {
