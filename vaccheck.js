@@ -1,7 +1,8 @@
 javascript:(function(){
     // Javascript does not work well with integers greater than 53 bits precision... So we need
     // to do our maths using strings.
-    function getDigit(x, digitIndex) {
+    function getDigit(x, digitIndex) 
+	{
         return (digitIndex >= x.length) ? "0" : x.charAt(x.length - digitIndex - 1);
     }
     function prefixZeros(strint, zeroCount) {
@@ -12,7 +13,8 @@ javascript:(function(){
         return result;
     }
     //Only works for positive numbers, which is fine in our use case.
-    function add(x, y) {
+    function add(x, y) 
+	{
         var maxLength = Math.max(x.length, y.length);
         var result = "";
         var borrow = 0;
@@ -47,7 +49,7 @@ javascript:(function(){
         return add(steam64identifier, miniProfileId);
     }
     //Selects the table's second column for player
-    var friends = [].slice.call(document.querySelectorAll('#personaldata_elements_container td.commends_inner_name');
+    var friends = [].slice.call(document.querySelectorAll('#personaldata_elements_container td.commends_inner_name'));
     var lookup = {};
 
     friends.forEach(function(friend) {
@@ -58,7 +60,8 @@ javascript:(function(){
         lookup[id].push(friend);
     });
 
-    function setVacation(player) {
+    function setVacation(player) 
+	{
         var friendElements = lookup[player.SteamId];
 
         friendElements.forEach(function(friend) {
@@ -67,18 +70,22 @@ javascript:(function(){
             span.style.fontWeight = 'bold';
             span.style.display = 'block';
 
-            if (inGameText) {
+            if (inGameText) 
+			{
                 inGameText.innerHTML = inGameText.innerHTML.replace(/<br ?\/?>/, ' - ');
             }
-
-            if (player.NumberOfVACBans || player.NumberOfGameBans) {
+			
+            if (player.NumberOfVACBans || player.NumberOfGameBans) 
+			{
                 var text = '';
 
-                if (player.NumberOfGameBans) {
+                if (player.NumberOfGameBans) 
+				{
                     text += player.NumberOfGameBans + ' OW bans';
                 }
 
-                if (player.NumberOfVACBans) {
+                if (player.NumberOfVACBans) 
+				{
                     text += (text === '' ? '' : ', ') +
                         player.NumberOfVACBans + ' VAC bans';
                 }
@@ -86,7 +93,8 @@ javascript:(function(){
 
                 span.style.color = 'rgb(255, 73, 73)';
                 span.innerHTML = text;
-            } else {
+            } else 
+			{
                 span.style.color = 'rgb(43, 203, 64)';
                 span.innerHTML = 'No Bans for this player.';
             }
@@ -95,14 +103,16 @@ javascript:(function(){
         });
     }
 
-    function onData(xmlHttp) {
+    function onData(xmlHttp) 
+	{
         if (xmlHttp.readyState === XMLHttpRequest.DONE && xmlHttp.status === 200) {
             var data = JSON.parse(xmlHttp.responseText);
             data.players.forEach(setVacation);
         }
     }
 
-    function makeApiCall(ids) {
+    function makeApiCall(ids) 
+	{
         var xmlHttp = new XMLHttpRequest();
         //API only allows 100 steam ids at once.
         var endpointRoot = 'https://api.steampowered.com/ISteamUser/GetPlayerBans/v1/?key=12A1D1DE83F9932934EDD6DF2BA00463&steamids=';
@@ -115,7 +125,8 @@ javascript:(function(){
 
     var ids = Object.keys(lookup);
 
-    while (ids.length > 0) {
+    while (ids.length > 0) 
+	{
         var batch = ids.splice(0, 100);
         makeApiCall(batch);
     }
