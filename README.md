@@ -23,3 +23,5 @@ Credits:
 [iEyepawd](http://www.reddit.com/user/iEyepawd) for bookmarklet
 
 Forked from [WillsonHaw/VacBanChecker](https://github.com/WillsonHaw/VacBanChecker)
+
+Inspired by [3kliksphilip](https://www.youtube.com/watch?v=AJyemS9hl50)
