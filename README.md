@@ -7,7 +7,8 @@ THIS WILL ONLY WORK FOR THE CSGO PLAYER REPORTS PAGE AND IM SORRY IF IT DOESNT W
 3. Find CSGO and click on Personal Game Data > YOUR_USERNAME's Personal Data
 4. Click on Reports Tab
 
-# How to install [Original Instructions](https://github.com/WillsonHaw/VacBanChecker)
+# How to install 
+[Original Instructions](https://github.com/WillsonHaw/VacBanChecker)
 
 1. Open view the raw code for [vaccheck.min.js](https://raw.githubusercontent.com/EdenCat/VacBanChecker/master/vaccheck.min.js).
 2. Right click your new bookmark and edit it. In the **URL** or **Location** field, paste the contents of [vaccheck.min.js](https://raw.githubusercontent.com/EdenCat/VacBanChecker/master/vaccheck.min.js).
